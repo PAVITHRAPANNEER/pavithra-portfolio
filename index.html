@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pavithra P | Portfolio</title>
+  <style>
+    /* ---------- GLOBAL STYLES ---------- */
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    a {color: #58a6ff; text-decoration: none;}
+    h1, h2, h3 {font-weight: 600;}
+
+    /* ---------- NAVBAR ---------- */
+    header {
+      background-color: #161b22;
+      padding: 15px 50px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {font-size: 22px; color: #58a6ff;}
+    nav a {
+      margin: 0 15px;
+      color: #e6edf3;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {color: #58a6ff;}
+
+    /* ---------- HERO SECTION ---------- */
+    #hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #0d1117, #161b22);
+    }
+    #hero h1 {font-size: 40px; color: #58a6ff;}
+    #hero h2 {font-size: 20px; color: #9da5b4; margin: 10px 0;}
+    #hero p {max-width: 600px; margin-top: 15px; font-size: 16px; color: #c9d1d9;}
+    #hero .btn {
+      margin-top: 25px;
+      background: #58a6ff;
+      color: #0d1117;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    #hero .btn:hover {background: #1f6feb; color: #fff;}
+
+    /* ---------- ABOUT ---------- */
+    section {
+      padding: 70px 60px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      color: #58a6ff;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+    .about-content {
+      text-align: center;
+      font-size: 17px;
+      color: #c9d1d9;
+    }
+
+    /* ---------- EDUCATION ---------- */
+    .education-item {
+      background: #161b22;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 15px 0;
+    }
+    .education-item h3 {color: #58a6ff;}
+    .education-item p {color: #c9d1d9; font-size: 15px;}
+
+    /* ---------- PROJECTS ---------- */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {transform: translateY(-6px);}
+    .project-card h3 {color: #58a6ff; margin-bottom: 10px;}
+    .project-card p {color: #c9d1d9; font-size: 14px;}
+
+    /* ---------- SKILLS ---------- */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .skill {
+      background: #161b22;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 14px;
+      color: #c9d1d9;
+      border: 1px solid #30363d;
+    }
+
+    /* ---------- CONTACT ---------- */
+    .contact {
+      text-align: center;
+    }
+    .contact p {margin-bottom: 8px;}
+    .contact a {
+      color: #58a6ff;
+      font-weight: 600;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #161b22;
+      text-align: center;
+      padding: 20px;
+      color: #9da5b4;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 768px) {
+      header {padding: 15px 20px;}
+      nav a {margin: 0 8px;}
+      section {padding: 50px 25px;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <h1>Pavithra P</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <h1>Hello, I'm Pavithra P 👋</h1>
+    <h2>B.E — Computer Science & Engineering Student</h2>
+    <p>
+      Passionate about developing innovative software solutions, exploring AR & Machine Learning, and building creative projects that make an impact.
+    </p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>
+        I am a Computer Science Engineering student with a strong foundation in programming, data structures, and web development. I love learning about new technologies, building user-friendly projects, and exploring creative ideas in software development.
+      </p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education-item">
+      <h3>K. Ramakrishnan College of Engineering</h3>
+      <p>B.E – Computer Science and Engineering (CGPA: 7.9)</p>
+    </div>
+    <div class="education-item">
+      <h3>Dr. G Sakunthala Matric Hr. Sec School</h3>
+      <p>HSC – 86%</p>
+    </div>
+    <div class="education-item">
+      <h3>Shakespeare Matriculation School</h3>
+      <p>SSLC – 65%</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Design & Engineer Identification (AR App)</h3>
+        <p>Developed an AR-based app for civil engineering that connects engineers and customers efficiently using ML and AR libraries.</p>
+      </div>
+      <div class="project-card">
+        <h3>Student Management System (CRUD)</h3>
+        <p>Java and MySQL-based desktop app for managing student details using CRUD operations with a user-friendly UI.</p>
+      </div>
+      <div class="project-card">
+        <h3>Online Railway Reservation System</h3>
+        <p>Full-stack project using PHP, HTML, and SQL developed during internship at CodeBind Technologies.</p>
+      </div>
+      <div class="project-card">
+        <h3>Doctor’s Availability through RFID</h3>
+        <p>Implemented a queue-based system with RFID technology to manage doctor availability efficiently.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="skill">Python</span>
+      <span class="skill">Java</span>
+      <span class="skill">C</span>
+      <span class="skill">MySQL</span>
+      <span class="skill">HTML & CSS</span>
+      <span class="skill">PHP</span>
+      <span class="skill">R (Basics)</span>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Email: <a href="mailto:pavithrapanneer26@gmail.com">pavithrapanneer26@gmail.com</a></p>
+      <p>Phone: <a href="tel:+916380400788">+91 63804 00788</a></p>
+      <p>Location: Trichy, Tamil Nadu, India</p>
+      <p>
+        <a href="https://www.linkedin.com/in/pavithra-panneer-690b2b257" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/PAVITHRAPANNEER" target="_blank">GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Pavithra P | Designed with ❤️ using HTML5 & CSS
+  </footer>
+
+</body>
+</html>
